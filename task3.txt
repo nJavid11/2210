@@ -1,0 +1,19 @@
+using System;
+using System.Text.RegularExpressions;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string badString = "       Lorem      Ipsum          has   been    the  industry's      standard               dummy.    ";
+            string CleanedString = Regex.Replace(badString, "/\\s\\s+/g", " ");
+            CleanedString = Regex.Replace(badString, "/ ?$/g", "");
+            Console.WriteLine($"Cleaned String: {CleanedString}");
+
+            
+            
+        }
+    }
+}//java da yazdim bu kodu amma alinmadi: "The name Regex does not exist in the current context."-errorunu aldim..
