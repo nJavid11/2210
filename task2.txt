@@ -1,0 +1,27 @@
+using System;
+using System.Text.RegularExpressions;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Regex r = new Regex("This is a Normal String");
+            if (r.IsMatch("/[A-Z]/g") == true)
+            {
+                if (r.IsMatch("/[a-z]/g") == true)
+                {
+                    if (r.IsMatch("/[0-9]/g") == true)
+                    {
+                        Console.WriteLine("works");
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+// buda alinmadi ancaq mentiq duzdu mence..
